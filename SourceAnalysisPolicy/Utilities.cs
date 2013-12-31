@@ -27,7 +27,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
     /// Contains various utility methods.
     /// </summary>
     internal static class Utilities
-    {
+    { 
         /// <summary>
         /// Displays an error message box.
         /// </summary>
