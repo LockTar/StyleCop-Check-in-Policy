@@ -6,7 +6,7 @@
     <Description xml:space="preserve">StyleCop Checkin Policy for Visual Studio 2013.
 This way, the StyleCop warnings doesn't have to be set as error during build and you only have to fix them when you want to checkin your code.
 
-Optional note: Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes) parameter in your build definition to throw an error when there is a StyleCop warning. In this way your build will fail so no corrupt code is checked-in. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.</Description>
+Optional note: Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes) parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet StyleCop.MSBuild package installed. This way your build will fail so no corrupt code is checked-in. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.</Description>
     <Icon>stylecop_warning_48x48.png</Icon>
     <PreviewImage>PolicyDialog.png</PreviewImage>
     <Tags>StyleCop;Checkin Policy;Visual Studio;C#;Analysis;Code Analysis;Checkin Policies</Tags>
