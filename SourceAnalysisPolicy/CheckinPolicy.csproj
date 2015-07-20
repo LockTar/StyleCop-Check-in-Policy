@@ -103,13 +103,13 @@
     </Reference>
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="StyleCop">
-      <HintPath>..\Solution Items\StyleCop\4.7.48.0\StyleCop.dll</HintPath>
+      <HintPath>..\Solution Items\StyleCop\4.7.49.0\StyleCop.dll</HintPath>
     </Reference>
     <Reference Include="StyleCop.CSharp">
-      <HintPath>..\Solution Items\StyleCop\4.7.48.0\StyleCop.CSharp.dll</HintPath>
+      <HintPath>..\Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="StyleCop.CSharp.Rules">
-      <HintPath>..\Solution Items\StyleCop\4.7.48.0\StyleCop.CSharp.Rules.dll</HintPath>
+      <HintPath>..\Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.Rules.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
