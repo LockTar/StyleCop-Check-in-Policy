@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="StyleCop.CheckinPolicy.6464925a-6811-4735-90b6-b7d07e52bf4c" Version="1.1.0" Language="en-US" Publisher="Ralph Jansen" />
+    <Identity Id="StyleCop.CheckinPolicy.6464925a-6811-4735-90b6-b7d07e52bf4c" Version="2.0.1" Language="en-US" Publisher="Ralph Jansen" />
     <DisplayName>StyleCop Check-in Policy</DisplayName>
-    <Description xml:space="preserve">StyleCop Checkin Policy for Visual Studio 2013.
+    <Description xml:space="preserve">StyleCop Checkin Policy for Visual Studio 2012, 2013 and 2015.
 This way, the StyleCop warnings don't have to be set as error during build and you only have to fix them when you want to checkin your code.
 
 Optional note: Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes) parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet StyleCop.MSBuild package installed. This way your build will fail so no corrupt code is checked-in. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.</Description>
@@ -13,7 +13,7 @@ Optional note: Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes)
     <Tags>StyleCop;Checkin Policy;Visual Studio;C#;Analysis;Code Analysis;Checkin Policies</Tags>
   </Metadata>
   <Installation>
-    <InstallationTarget Version="[12.0]" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[11.0,15.0)" Id="Microsoft.VisualStudio.Pro" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
