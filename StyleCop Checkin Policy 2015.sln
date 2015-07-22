@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4C7B1B75-E0D4-46A9-9974-6FD42C5A608A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StyleCop", "StyleCop", "{69D6BF07-10E7-4F12-B3BD-9BE1E2901865}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.7.49.0", "4.7.49.0", "{C10D648D-9745-4620-8C8B-39A683941669}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.dll = Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.dll
+		Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.Rules.dll = Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.Rules.dll
+		Solution Items\StyleCop\4.7.49.0\StyleCop.dll = Solution Items\StyleCop\4.7.49.0\StyleCop.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeamFoundation", "TeamFoundation", "{BF8D96DC-1573-4DCD-AAF7-0ED7CB9273F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2013", "2013", "{4CF75ECA-6A12-4206-BAA6-83BC70BCF5C2}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\TeamFoundation\2013\Microsoft.TeamFoundation.VersionControl.Client.dll = Solution Items\TeamFoundation\2013\Microsoft.TeamFoundation.VersionControl.Client.dll
+		Solution Items\TeamFoundation\2013\Microsoft.TeamFoundation.WorkItemTracking.Client.dll = Solution Items\TeamFoundation\2013\Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckinPolicy", "SourceAnalysisPolicy\CheckinPolicy.csproj", "{D88F2162-80F6-481F-B60F-D837180E95B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2015", "2015", "{41FF31E7-256C-43ED-8CE2-832D179EF4AD}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\TeamFoundation\2015\Microsoft.TeamFoundation.VersionControl.Client.dll = Solution Items\TeamFoundation\2015\Microsoft.TeamFoundation.VersionControl.Client.dll
+		Solution Items\TeamFoundation\2015\Microsoft.TeamFoundation.WorkItemTracking.Client.dll = Solution Items\TeamFoundation\2015\Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vsix2015", "Installer\2015\Vsix2015.csproj", "{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D88F2162-80F6-481F-B60F-D837180E95B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88F2162-80F6-481F-B60F-D837180E95B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88F2162-80F6-481F-B60F-D837180E95B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88F2162-80F6-481F-B60F-D837180E95B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69D6BF07-10E7-4F12-B3BD-9BE1E2901865} = {4C7B1B75-E0D4-46A9-9974-6FD42C5A608A}
+		{C10D648D-9745-4620-8C8B-39A683941669} = {69D6BF07-10E7-4F12-B3BD-9BE1E2901865}
+		{BF8D96DC-1573-4DCD-AAF7-0ED7CB9273F9} = {4C7B1B75-E0D4-46A9-9974-6FD42C5A608A}
+		{4CF75ECA-6A12-4206-BAA6-83BC70BCF5C2} = {BF8D96DC-1573-4DCD-AAF7-0ED7CB9273F9}
+		{41FF31E7-256C-43ED-8CE2-832D179EF4AD} = {BF8D96DC-1573-4DCD-AAF7-0ED7CB9273F9}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SourceAnalysisPolicy.vsmdi
+	EndGlobalSection
+EndGlobal
