@@ -32,6 +32,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2015", "2015", "{41FF31E7-2
 		Solution Items\TeamFoundation\2015\Microsoft.TeamFoundation.WorkItemTracking.Client.dll = Solution Items\TeamFoundation\2015\Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vsix2015", "Installer\2015\Vsix2015.csproj", "{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,9 @@ Global
 		{0F18841E-B8E0-48E4-8223-6B39379BE934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F18841E-B8E0-48E4-8223-6B39379BE934}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F18841E-B8E0-48E4-8223-6B39379BE934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B84A4EE-6C0F-4A80-B261-AA84AA20045C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
