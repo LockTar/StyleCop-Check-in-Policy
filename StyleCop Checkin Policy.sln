@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2013", "2013", "{4CF75ECA-6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckinPolicy", "SourceAnalysisPolicy\CheckinPolicy.csproj", "{D88F2162-80F6-481F-B60F-D837180E95B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vsix2013", "Installer\StyleCop Checkin Policy\Vsix2013.csproj", "{0F18841E-B8E0-48E4-8223-6B39379BE934}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vsix2013", "Installer\2013\Vsix2013.csproj", "{0F18841E-B8E0-48E4-8223-6B39379BE934}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2015", "2015", "{41FF31E7-256C-43ED-8CE2-832D179EF4AD}"
 	ProjectSection(SolutionItems) = preProject
