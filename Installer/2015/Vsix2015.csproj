@@ -43,7 +43,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StyleCop.CheckinPolicy</RootNamespace>
-    <AssemblyName>StyleCop.CheckinPolicy</AssemblyName>
+    <AssemblyName>StyleCop.CheckinPolicy.2015</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
