@@ -60,9 +60,10 @@ namespace RalphJansen.StyleCopCheckInPolicy.UI.Forms
             ListViewItem item = new ListViewItem();
 
             item.Text = violation.Rule.CheckId;
-            item.SubItems.Add(violation.Message);
+			item.SubItems.Add(violation.Line.ToString());
+			item.SubItems.Add(violation.Message);			
 
-            return item;
+			return item;
         }
 
         /// <summary>

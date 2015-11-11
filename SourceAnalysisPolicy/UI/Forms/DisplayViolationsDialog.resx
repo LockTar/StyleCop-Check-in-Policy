@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>501, 215</value>
+    <value>761, 215</value>
   </data>
   <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 27</value>
@@ -154,7 +154,7 @@
     <value>0, 249</value>
   </data>
   <data name="MainStatusStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>588, 22</value>
+    <value>848, 22</value>
   </data>
   <data name="MainStatusStrip.TabIndex" type="System.Int32, mscorlib">
     <value>1001</value>
@@ -204,17 +204,23 @@
   <data name="RuleColumnHeader.Text" xml:space="preserve">
     <value>Rule</value>
   </data>
+  <data name="LineColumnHeader.Text" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="LineColumnHeader.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
   <data name="MessageColumnHeader.Text" xml:space="preserve">
     <value>Message</value>
   </data>
   <data name="MessageColumnHeader.Width" type="System.Int32, mscorlib">
-    <value>500</value>
+    <value>700</value>
   </data>
   <data name="ViolationsListView.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 25</value>
   </data>
   <data name="ViolationsListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>564, 184</value>
+    <value>824, 184</value>
   </data>
   <data name="ViolationsListView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -241,7 +247,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>588, 271</value>
+    <value>848, 271</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>View Exceptions</value>
@@ -250,6 +256,12 @@
     <value>RuleColumnHeader</value>
   </data>
   <data name="&gt;&gt;RuleColumnHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LineColumnHeader.Name" xml:space="preserve">
+    <value>LineColumnHeader</value>
+  </data>
+  <data name="&gt;&gt;LineColumnHeader.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MessageColumnHeader.Name" xml:space="preserve">
@@ -262,6 +274,6 @@
     <value>DisplayViolationsDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseForm, RalphJansen.StyleCopCheckInPolicy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dc6946beb4fa7971</value>
+    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseForm, RalphJansen.StyleCopCheckInPolicy, Version=2.2.0.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
   </data>
 </root>
