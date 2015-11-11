@@ -15,7 +15,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>StyleCop.CheckinPolicy</RootNamespace>
-    <AssemblyName>StyleCop.CheckinPolicy.2012</AssemblyName>
+    <AssemblyName>RalphJansen.StyleCop.CheckinPolicy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>false</IncludeAssemblyInVSIXContainer>
