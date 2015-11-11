@@ -59,6 +59,7 @@ namespace RalphJansen.StyleCopCheckInPolicy.UI.Forms
 			// 
 			// ViolationsListView
 			// 
+			this.ViolationsListView.Activation = System.Windows.Forms.ItemActivation.TwoClick;
 			resources.ApplyResources(this.ViolationsListView, "ViolationsListView");
 			this.ViolationsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.RuleColumnHeader,
@@ -70,6 +71,7 @@ namespace RalphJansen.StyleCopCheckInPolicy.UI.Forms
 			this.ViolationsListView.Name = "ViolationsListView";
 			this.ViolationsListView.UseCompatibleStateImageBehavior = false;
 			this.ViolationsListView.View = System.Windows.Forms.View.Details;
+			this.ViolationsListView.ItemActivate += new System.EventHandler(this.ViolationsListView_ItemActivate);
 			// 
 			// RuleColumnHeader
 			// 
