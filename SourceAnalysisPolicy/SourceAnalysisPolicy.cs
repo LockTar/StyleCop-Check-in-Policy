@@ -46,6 +46,11 @@ namespace RalphJansen.StyleCopCheckInPolicy
 		/// </summary>
 		private PolicySettings settings;
 
+		/// <summary>
+		/// The Visual Studio Shell.
+		/// </summary>
+		private DTE dte;
+
 		#endregion
 
 		#region Constructors
@@ -127,17 +132,20 @@ namespace RalphJansen.StyleCopCheckInPolicy
 			SourceAnalysisPolicyFailure policyFailure = failure as SourceAnalysisPolicyFailure;
 			if (policyFailure != null)
 			{
+				// Create dialog to show the violations
 				using (DisplayViolationsDialog dialog = new DisplayViolationsDialog())
 				{
+					// Set the violations in the dialog.
 					dialog.Violations = policyFailure.Violations;
 
+					// Show dialog
 					dialog.ShowDialog();
 
 					// Check if there is a selected violation
 					if (dialog.SelectedViolation != null)
 					{
 						// There is a selected violation so move to it.
-						MoveToViolation(dialog.SelectedViolation);
+						ViolationTask.MoveToViolation(dte, dialog.SelectedViolation);
 					}
 				}
 			}
@@ -146,7 +154,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
 		}
 		
 		/// <summary>
-		/// Edits the policy.
+		/// Show dialog for editing the settings of the checkin policy.
 		/// </summary>
 		/// <param name="policyEditArgs">An <see cref="IPolicyEditArgs"/> containing policy edit arguments.</param>
 		/// <returns><b>true</b> if the policy has been edited successfully, otherwise <b>false</b>.</returns>
@@ -175,7 +183,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
 		}
 
 		/// <summary>
-		/// Evaluates the policy.
+		/// Evaluates the policy and set the violations in the task list (error window of Visual Studio).
 		/// </summary>
 		/// <returns>The policy failures, if any, that occurred.</returns>
 		public override PolicyFailure[] Evaluate()
@@ -184,14 +192,17 @@ namespace RalphJansen.StyleCopCheckInPolicy
 
 			using (EvaluationProcess process = new EvaluationProcess())
 			{
+				// Analyse if there are any violations
 				process.Initialize(new EvaluationContext(this, this.Settings, this.PendingCheckin));
 				failures = process.Analyze();
 
 				if (taskProvider != null)
 				{
+					// Set the settings into the taskprovider and clear it.
 					taskProvider.Settings = this.Settings;
 					taskProvider.Clear();
 
+					// If there are violations, add them to the tasks list
 					if (failures != null && failures.Length > 0)
 					{
 						foreach (PolicyFailure failure in failures)
@@ -209,7 +220,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
 
 			return failures;
 		}
-
+		
 		/// <summary>
 		/// Initializes the policy.
 		/// </summary>
@@ -223,11 +234,12 @@ namespace RalphJansen.StyleCopCheckInPolicy
 
 			if (taskProvider != null)
 			{
+				// Initialize zo clear the taskprovider.
 				taskProvider.Clear();
 			}
 			else
 			{
-				_DTE dte = (_DTE)pendingCheckin.GetService(typeof(_DTE));
+				dte = (DTE)pendingCheckin.GetService(typeof(DTE));
 
 				if (dte != null && dte.Application != null)
 				{
@@ -249,24 +261,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
 
 			base.Dispose();
 		}
-
-		/// <summary>
-		/// Move to the violatoin in the ide
-		/// </summary>
-		/// <param name="violation">The violation to move to.</param>
-		private static void MoveToViolation(Violation violation)
-		{
-			EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
-
-			// Open the file of the violation						
-			Window fileWindow = dte.ItemOperations.OpenFile(violation.SourceCode.Path);
-			fileWindow.Activate();
-
-			// Set the cursor to the right position.
-			var selection = dte.ActiveDocument.Selection as TextSelection;
-			selection.MoveToLineAndOffset(violation.Line, 1);
-		}
-
+		
 		#endregion
 	}
 }

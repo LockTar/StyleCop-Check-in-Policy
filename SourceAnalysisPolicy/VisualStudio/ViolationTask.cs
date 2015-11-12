@@ -59,21 +59,32 @@ namespace RalphJansen.StyleCopCheckInPolicy.VisualStudio
             set;
         }
 
-        #endregion
+		#endregion
 
-        /// <summary>
-        /// Raises the <see cref="Navigate"/> event.
-        /// </summary>
-        /// <param name="e">An <see cref="System.EventArgs"/> containing event data.</param>
-        protected override void OnNavigate(EventArgs e)
+		/// <summary>
+		/// Move to the violation in the ide.
+		/// </summary>
+		/// <param name="violation">The violation to move to.</param>
+		internal static void MoveToViolation(DTE dte, Violation violation)
+		{
+			// Open the file of the violation						
+			Window window = dte.OpenFile(EnvDTE.Constants.vsViewKindCode, violation.SourceCode.Path);
+			window.Activate();
+
+			// Set the cursor to the right position.
+			TextSelection t = window.Document.Selection as TextSelection;
+			t.GotoLine(violation.Line, false);
+		}
+
+		/// <summary>
+		/// Raises the <see cref="Navigate"/> event.
+		/// </summary>
+		/// <param name="e">An <see cref="System.EventArgs"/> containing event data.</param>
+		protected override void OnNavigate(EventArgs e)
         {
-            _DTE dte = (_DTE)this.Provider.GetService(typeof(_DTE));
+            DTE dte = (DTE)this.Provider.GetService(typeof(DTE));
 
-            Window window = dte.OpenFile(EnvDTE.Constants.vsViewKindCode, this.Violation.SourceCode.Path);
-            window.Activate();
-
-            TextSelection t = window.Document.Selection as TextSelection;
-            t.GotoLine(this.Violation.Line, false);
+			MoveToViolation(dte, this.Violation);
 
             base.OnNavigate(e);
         }

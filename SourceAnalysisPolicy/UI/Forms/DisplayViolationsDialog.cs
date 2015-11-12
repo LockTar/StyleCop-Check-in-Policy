@@ -30,7 +30,6 @@ namespace RalphJansen.StyleCopCheckInPolicy.UI.Forms
 	/// </summary>
 	internal partial class DisplayViolationsDialog : BaseForm
 	{
-		EnvDTE.DTE _dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
 
 		#region Constructors
 
