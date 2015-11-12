@@ -202,7 +202,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
 					taskProvider.Settings = this.Settings;
 					taskProvider.Clear();
 
-					// If there are violations, add them to the tasks list
+					// If there are violations, add them to the tasks list (error window)
 					if (failures != null && failures.Length > 0)
 					{
 						foreach (PolicyFailure failure in failures)
@@ -239,6 +239,7 @@ namespace RalphJansen.StyleCopCheckInPolicy
 			}
 			else
 			{
+				// Get the reference to the VS ide.
 				dte = (DTE)pendingCheckin.GetService(typeof(DTE));
 
 				if (dte != null && dte.Application != null)
