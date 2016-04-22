@@ -161,14 +161,17 @@
       <HintPath>..\packages\VSSDK.DTE.7.0.4\lib\net20\stdole.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="StyleCop">
-      <HintPath>..\Solution Items\StyleCop\4.7.49.0\StyleCop.dll</HintPath>
+    <Reference Include="StyleCop, Version=4.7.1000.0, Culture=neutral, PublicKeyToken=f904653c63bc2738, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Solution Items\StyleCop\4.7.52.0\StyleCop.dll</HintPath>
     </Reference>
-    <Reference Include="StyleCop.CSharp">
-      <HintPath>..\Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.dll</HintPath>
+    <Reference Include="StyleCop.CSharp, Version=4.7.1000.0, Culture=neutral, PublicKeyToken=f904653c63bc2738, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Solution Items\StyleCop\4.7.52.0\StyleCop.CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="StyleCop.CSharp.Rules">
-      <HintPath>..\Solution Items\StyleCop\4.7.49.0\StyleCop.CSharp.Rules.dll</HintPath>
+    <Reference Include="StyleCop.CSharp.Rules, Version=4.7.1000.0, Culture=neutral, PublicKeyToken=f904653c63bc2738, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Solution Items\StyleCop\4.7.52.0\StyleCop.CSharp.Rules.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
