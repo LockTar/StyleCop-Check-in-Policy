@@ -22,9 +22,9 @@ This GitHub site is the sourcecode for the Visual Studio check-in policy for che
 * Visual Studio 2015
 * Visual Studio 2017 (Coming soon)
 
-*Optional note* 
-Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes) parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet [StyleCop.MSBuild](https://www.nuget.org/packages/StyleCop.MSBuild/) package installed. This way your build will fail so no corrupt code is checked-in. This check-in policy prevents users from checking-in bad code but it is a check-in policy so it could be overridden. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.
+*Optional note*: 
+Set the `/p:StyleCopTreatErrorsAsWarnings=false` parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet [StyleCop.MSBuild](https://www.nuget.org/packages/StyleCop.MSBuild/) package installed. This way your build will fail so no corrupt code is checked-in. This check-in policy prevents users from checking-in bad code but it is a check-in policy so it could be overridden. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.
 
 
-*Disclaimer note*
+*Disclaimer note*: 
 The original code is from another CodePlex project called [Source Analysis Policy](https://sourceanalysispolicy.codeplex.com). This code is altered because the original project stopped supporting new versions of Visual Studio and StyleCop. The functionality is for some parts the same but a lot is altered like support for the latest StyleCop version and the new extension methods of Visual Studio with vsix files.
