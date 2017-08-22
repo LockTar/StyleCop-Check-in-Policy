@@ -7,7 +7,7 @@
 This way, the StyleCop warnings don't have to be set as error during build and you only have to fix them when you want to checkin your code.
 
 Optional note: Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes) parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet StyleCop.MSBuild package installed. This way your build will fail so no corrupt code is checked-in. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.</Description>
-    <MoreInfo>https://stylecopcheckinpolicy.codeplex.com</MoreInfo>
+    <MoreInfo>https://github.com/LockTar/StyleCop-Check-in-Policy</MoreInfo>
     <License>license.txt</License>
     <Icon>stylecop_warning_48x48.png</Icon>
     <PreviewImage>PolicyDialog.png</PreviewImage>

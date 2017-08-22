@@ -607,7 +607,7 @@
     <value>12</value>
   </data>
   <data name="StyleCopAddressLabel.Text" xml:space="preserve">
-    <value>https://github.com/LockTar/StyleCop-Check-in-Policy</value>
+    <value>https://github.com/StyleCop/StyleCop</value>
   </data>
   <data name="&gt;&gt;StyleCopAddressLabel.Name" xml:space="preserve">
     <value>StyleCopAddressLabel</value>
