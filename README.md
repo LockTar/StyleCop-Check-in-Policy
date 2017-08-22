@@ -1,12 +1,12 @@
 # StyleCop-Check-in-Policy
+*Visual Studio 2017 version is in public beta!*
 
-In progress... no time indication yet to finish.
+This GitHub site is the sourcecode for the Visual Studio check-in policy for checking your code with StyleCop. This check-in policy could be installed via the [Marketplace](https://marketplace.visualstudio.com).
 
-Working on update for Visual Studio 2017 with latest StyleCop rules.
-
-
-
-This GitHub site is the sourcecode for the Visual Studio check-in policy for checking your code with StyleCop. This check-in policy could be installed via the [Marketplace](https://marketplace.visualstudio.com) for [Visual Studio 2013](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2013), [Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2015).
+Select the right version:
+* [Visual Studio 2013](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2013)
+* [Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2015)
+* [Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2017)
 
 
 ## Functions
@@ -20,7 +20,7 @@ This GitHub site is the sourcecode for the Visual Studio check-in policy for che
 ## Requirements
 * Visual Studio 2013
 * Visual Studio 2015
-* Visual Studio 2017 (Coming soon)
+* Visual Studio 2017
 
 *Optional note*: 
 Set the `/p:StyleCopTreatErrorsAsWarnings=false` parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet [StyleCop.MSBuild](https://www.nuget.org/packages/StyleCop.MSBuild/) package installed. This way your build will fail so no corrupt code is checked-in. This check-in policy prevents users from checking-in bad code but it is a check-in policy so it could be overridden. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.
