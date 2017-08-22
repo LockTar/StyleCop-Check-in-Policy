@@ -50,9 +50,9 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.2.0.0")]
-[assembly: AssemblyFileVersion("2.2.0.0")]
-[assembly: AssemblyInformationalVersion("2.2.0.0")]
+[assembly: AssemblyVersion("2.3.0.0")]
+[assembly: AssemblyFileVersion("2.3.0.0")]
+[assembly: AssemblyInformationalVersion("2.3.0.0")]
 
 //#if (!NO_UNIT_TESTING)
 //[assembly: InternalsVisibleTo("SourceAnalysisPolicyTests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100c9650bac0852b58252c4054d83b2c3a9fd2104d3b85a3d725f127a0266861536c9b7b61a33c2de4407f15aa91c95fe5a6d46e7769e8f63a0b3bd0b49ed0a4f73df305d59b184b74d981a2d826143340969eb57de2ea21ebf6ddc7890c7c9e22e466773520f6e04a82317da7217118e1670ed119c3882fe0d88a4975a1f5178ac")]

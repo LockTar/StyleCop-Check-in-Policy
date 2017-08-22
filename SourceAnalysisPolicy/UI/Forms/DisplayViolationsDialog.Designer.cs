@@ -29,75 +29,75 @@ namespace RalphJansen.StyleCopCheckInPolicy.UI.Forms
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayViolationsDialog));
-			this.CloseButton = new System.Windows.Forms.Button();
-			this.MainStatusStrip = new System.Windows.Forms.StatusStrip();
-			this.ExceptionsLabel = new System.Windows.Forms.Label();
-			this.ViolationsListView = new System.Windows.Forms.ListView();
-			this.RuleColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.LineColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.MessageColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-			this.SuspendLayout();
-			// 
-			// CloseButton
-			// 
-			resources.ApplyResources(this.CloseButton, "CloseButton");
-			this.CloseButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.CloseButton.Name = "CloseButton";
-			this.CloseButton.UseVisualStyleBackColor = true;
-			this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-			// 
-			// MainStatusStrip
-			// 
-			resources.ApplyResources(this.MainStatusStrip, "MainStatusStrip");
-			this.MainStatusStrip.Name = "MainStatusStrip";
-			// 
-			// ExceptionsLabel
-			// 
-			resources.ApplyResources(this.ExceptionsLabel, "ExceptionsLabel");
-			this.ExceptionsLabel.Name = "ExceptionsLabel";
-			// 
-			// ViolationsListView
-			// 
-			this.ViolationsListView.Activation = System.Windows.Forms.ItemActivation.TwoClick;
-			resources.ApplyResources(this.ViolationsListView, "ViolationsListView");
-			this.ViolationsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayViolationsDialog));
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.MainStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.ExceptionsLabel = new System.Windows.Forms.Label();
+            this.ViolationsListView = new System.Windows.Forms.ListView();
+            this.RuleColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.LineColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MessageColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SuspendLayout();
+            // 
+            // CloseButton
+            // 
+            resources.ApplyResources(this.CloseButton, "CloseButton");
+            this.CloseButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // MainStatusStrip
+            // 
+            resources.ApplyResources(this.MainStatusStrip, "MainStatusStrip");
+            this.MainStatusStrip.Name = "MainStatusStrip";
+            // 
+            // ExceptionsLabel
+            // 
+            resources.ApplyResources(this.ExceptionsLabel, "ExceptionsLabel");
+            this.ExceptionsLabel.Name = "ExceptionsLabel";
+            // 
+            // ViolationsListView
+            // 
+            this.ViolationsListView.Activation = System.Windows.Forms.ItemActivation.TwoClick;
+            resources.ApplyResources(this.ViolationsListView, "ViolationsListView");
+            this.ViolationsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.RuleColumnHeader,
             this.LineColumnHeader,
             this.MessageColumnHeader});
-			this.ViolationsListView.FullRowSelect = true;
-			this.ViolationsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.ViolationsListView.MultiSelect = false;
-			this.ViolationsListView.Name = "ViolationsListView";
-			this.ViolationsListView.UseCompatibleStateImageBehavior = false;
-			this.ViolationsListView.View = System.Windows.Forms.View.Details;
-			this.ViolationsListView.ItemActivate += new System.EventHandler(this.ViolationsListView_ItemActivate);
-			// 
-			// RuleColumnHeader
-			// 
-			resources.ApplyResources(this.RuleColumnHeader, "RuleColumnHeader");
-			// 
-			// LineColumnHeader
-			// 
-			resources.ApplyResources(this.LineColumnHeader, "LineColumnHeader");
-			// 
-			// MessageColumnHeader
-			// 
-			resources.ApplyResources(this.MessageColumnHeader, "MessageColumnHeader");
-			// 
-			// DisplayViolationsDialog
-			// 
-			resources.ApplyResources(this, "$this");
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.CancelButton = this.CloseButton;
-			this.Controls.Add(this.ViolationsListView);
-			this.Controls.Add(this.ExceptionsLabel);
-			this.Controls.Add(this.MainStatusStrip);
-			this.Controls.Add(this.CloseButton);
-			this.Name = "DisplayViolationsDialog";
-			this.Load += new System.EventHandler(this.DisplayViolationsDialog_Load);
-			this.ResumeLayout(false);
-			this.PerformLayout();
+            this.ViolationsListView.FullRowSelect = true;
+            this.ViolationsListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.ViolationsListView.MultiSelect = false;
+            this.ViolationsListView.Name = "ViolationsListView";
+            this.ViolationsListView.UseCompatibleStateImageBehavior = false;
+            this.ViolationsListView.View = System.Windows.Forms.View.Details;
+            this.ViolationsListView.ItemActivate += new System.EventHandler(this.ViolationsListView_ItemActivate);
+            // 
+            // RuleColumnHeader
+            // 
+            resources.ApplyResources(this.RuleColumnHeader, "RuleColumnHeader");
+            // 
+            // LineColumnHeader
+            // 
+            resources.ApplyResources(this.LineColumnHeader, "LineColumnHeader");
+            // 
+            // MessageColumnHeader
+            // 
+            resources.ApplyResources(this.MessageColumnHeader, "MessageColumnHeader");
+            // 
+            // DisplayViolationsDialog
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.CloseButton;
+            this.Controls.Add(this.ViolationsListView);
+            this.Controls.Add(this.ExceptionsLabel);
+            this.Controls.Add(this.MainStatusStrip);
+            this.Controls.Add(this.CloseButton);
+            this.Name = "DisplayViolationsDialog";
+            this.Load += new System.EventHandler(this.DisplayViolationsDialog_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
