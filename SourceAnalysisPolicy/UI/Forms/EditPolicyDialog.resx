@@ -532,7 +532,7 @@
     <value>ExclusionControl</value>
   </data>
   <data name="&gt;&gt;ExclusionControl.Type" xml:space="preserve">
-    <value>RalphJansen.StyleCopCheckInPolicy.UI.Controls.ExclusionManagerControl, RalphJansen.StyleCopCheckInPolicy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dc6946beb4fa7971</value>
+    <value>RalphJansen.StyleCopCheckInPolicy.UI.Controls.ExclusionManagerControl, RalphJansen.StyleCopCheckInPolicy, Version=2.2.0.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
   </data>
   <data name="&gt;&gt;ExclusionControl.Parent" xml:space="preserve">
     <value>ExclusionsTabPage</value>
@@ -601,7 +601,7 @@
     <value>6, 152</value>
   </data>
   <data name="StyleCopAddressLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 13</value>
+    <value>261, 13</value>
   </data>
   <data name="StyleCopAddressLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -769,6 +769,6 @@
     <value>EditPolicyDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseDialog, RalphJansen.StyleCopCheckInPolicy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=dc6946beb4fa7971</value>
+    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseDialog, RalphJansen.StyleCopCheckInPolicy, Version=2.2.0.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
   </data>
 </root>
