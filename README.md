@@ -1,6 +1,4 @@
 # StyleCop-Check-in-Policy
-*Visual Studio 2017 version is in public beta!*
-
 This GitHub site is the sourcecode for the Visual Studio check-in policy for checking your code with StyleCop. This check-in policy could be installed via the [Marketplace](https://marketplace.visualstudio.com).
 
 Select the right version:
