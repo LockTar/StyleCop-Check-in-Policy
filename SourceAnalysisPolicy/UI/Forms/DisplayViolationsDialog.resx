@@ -274,6 +274,6 @@
     <value>DisplayViolationsDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseForm, RalphJansen.StyleCopCheckInPolicy, Version=2.3.0.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
+    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseForm, RalphJansen.StyleCopCheckInPolicy, Version=2.3.1.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
   </data>
 </root>
