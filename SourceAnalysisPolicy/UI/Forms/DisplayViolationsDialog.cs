@@ -120,16 +120,16 @@ namespace RalphJansen.StyleCopCheckInPolicy.UI.Forms
 		{
 			this.PopulateControls();
 		}
-		
+
 		private void ViolationsListView_ItemActivate(object sender, EventArgs e)
 		{
-			if (this.Violations != null && this.Violations.Count > 0)
+			if (this.Violations != null && this.Violations.Count > 0 && ViolationsListView.SelectedIndices.Count > 0)
 			{
 				// Set the selected violation
 				SelectedViolation = Violations[ViolationsListView.SelectedIndices[0]];
 
 				// Close the form so we can navigate to it.
-				this.Close();				
+				this.Close();
 			}
 		}
 	}
