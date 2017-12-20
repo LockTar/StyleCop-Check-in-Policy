@@ -232,6 +232,9 @@ namespace RalphJansen.StyleCopCheckInPolicy
 				ThrowHelper.ThrowArgumentNullException("pendingCheckin");
 			}
 
+			// Get the reference to the VS ide.
+			dte = (DTE)pendingCheckin.GetService(typeof(DTE));
+
 			if (taskProvider != null)
 			{
 				// Initialize zo clear the taskprovider.
@@ -239,9 +242,6 @@ namespace RalphJansen.StyleCopCheckInPolicy
 			}
 			else
 			{
-				// Get the reference to the VS ide.
-				dte = (DTE)pendingCheckin.GetService(typeof(DTE));
-
 				if (dte != null && dte.Application != null)
 				{
 					taskProvider = new ViolationTaskProvider(
