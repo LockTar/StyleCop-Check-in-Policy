@@ -258,6 +258,6 @@
     <value>AddExclusionDialog</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseDialog, RalphJansen.StyleCopCheckInPolicy, Version=2.3.1.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
+    <value>RalphJansen.StyleCopCheckInPolicy.UI.Forms.Design.BaseDialog, RalphJansen.StyleCopCheckInPolicy, Version=2.3.2.0, Culture=neutral, PublicKeyToken=29c5c288f7925141</value>
   </data>
 </root>
