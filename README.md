@@ -2,6 +2,7 @@
 This GitHub site is the sourcecode for the Visual Studio check-in policy for checking your code with StyleCop. This check-in policy could be installed via the [Marketplace](https://marketplace.visualstudio.com).
 
 Select the right version:
+* [Visual Studio 2012](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2012)
 * [Visual Studio 2013](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2013)
 * [Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2015)
 * [Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RalphJansen.StyleCopCheck-inPolicy2017)
@@ -16,6 +17,7 @@ Select the right version:
 * Exclude folders to be checked
 
 ## Requirements
+* Visual Studio 2012
 * Visual Studio 2013
 * Visual Studio 2015
 * Visual Studio 2017
