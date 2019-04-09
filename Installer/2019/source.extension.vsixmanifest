@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="StyleCop.CheckinPolicy.07de449e-fa6e-4831-9f65-cef882ffb4a1" Version="2.4.0" Language="en-US" Publisher="Ralph Jansen" />
+		<DisplayName>StyleCop Check-in Policy 2019</DisplayName>
+		<Description xml:space="preserve">StyleCop Checkin Policy for Visual Studio 2019.
+This way, the StyleCop warnings don't have to be set as error during build and you only have to fix them when you want to checkin your code.
+
+Optional note: Set the "/p:StyleCopTreatErrorsAsWarnings=false" (without quotes) parameter in your build definition to throw an error when there is a StyleCop warning. This works if you have the NuGet StyleCop.MSBuild package installed. This way your build will fail so no corrupt code is checked-in. You can set this parameter in your build definition on the "Process" tab, under the "Advanced" category and then the "MSBuild Arguments" property.</Description>
+		<MoreInfo>https://github.com/LockTar/StyleCop-Check-in-Policy</MoreInfo>
+		<License>license.txt</License>
+		<Icon>stylecop_warning_48x48.png</Icon>
+		<PreviewImage>PolicyDialog.png</PreviewImage>
+		<Tags>StyleCop;Checkin Policy;Visual Studio;C#;Analysis;Code Analysis;Checkin Policies</Tags>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Version="[16.0, 17.0)" Id="Microsoft.VisualStudio.Community" />
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="policies.pkgdef" />
+		<Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="CheckinPolicy" Path="|CheckinPolicy|" AssemblyName="|CheckinPolicy;AssemblyName|" />
+	</Assets>
+	<Prerequisites>
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+	</Prerequisites>
+</PackageManifest>
